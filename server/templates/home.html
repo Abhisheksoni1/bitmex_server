@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 style="text-align: center;">Bitmex Bot Logs</h1>
+{% for log in logs %}
+    <div class="card">
+        {% for data in log %}
+            {{data}}<br>
+        {% endfor %}
+    </div>
+    <hr>
+{% endfor %}
+{% endblock %}

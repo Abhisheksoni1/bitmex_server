@@ -1,0 +1,7 @@
+{
+  "name": "Start on Heroku: Python",
+  "description": "Bitmex bot performance viewer",
+  "image": "heroku/python",
+  "repository": "https://github.com/Abhisheksoni1/bitmex_server",
+  "keywords": ["python" , "django"]
+}
