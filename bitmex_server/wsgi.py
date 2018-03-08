@@ -8,12 +8,12 @@ https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
 
 import os
-# from whitenoise import WhiteNoise
+from whitenoise import WhiteNoise
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bitmex_server.settings")
 
 application = get_wsgi_application()
 
-# application = WhiteNoise(application, root='static')
-# application.add_files('staticfiles', prefix='more-files/')
+application = WhiteNoise(application, root='static')
+application.add_files('staticfiles', prefix='more-files/')
